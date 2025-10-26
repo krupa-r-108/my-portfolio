@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root{
+  --hover-color: #FDC435;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* body{
+   overflow-x: hidden;
+} */
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+.animate-bounce-slow {
+  animation: bounce-slow 4s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-slide-left { animation: slideInLeft 1.5s ease forwards; }
+.animate-slide-right { animation: slideInRight 1.5s ease forwards; }
+
+
+
+/* #bottom{
+  background-color: purple;
+  height: 100px;
+  position: absolute;
+  width: 100px;
+  z-index: auto;
+}
+#middle{
+  background-color: red;
+  height: 100px;
+  position: absolute;
+  width: 100px;
+  z-index: 1;
+}
+#top{
+  background-color: orange;
+  height: 100px;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+} */
