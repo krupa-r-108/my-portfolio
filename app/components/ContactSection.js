@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import CircleShape from "./shapes/CircleShape";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -7,7 +6,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-[#F9FAFF] flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-15 gap-12 relative"
+      className="min-h-[80vh] bg-[#F9FAFF] flex flex-col md:flex-row items-center justify-center md:justify-between px-8 md:px-16 py-10 md:py-15 gap-8 md:gap-12 relative"
     >
       <CircleShape
         size={40}
@@ -26,7 +25,8 @@ export default function ContactSection() {
           <span className="text-[#FDC435]">Amazing</span> together.
         </h2>
         <p className="text-gray-600 text-lg">
-          Start by saying <span className="font-semibold text-[#1C1E53]">Hi 👋</span>
+          Start by saying{" "}
+          <span className="font-semibold text-[#1C1E53]">Hi 👋</span>
         </p>
       </div>
 
@@ -66,13 +66,28 @@ export default function ContactSection() {
 
       {/* SOCIALS - Bottom Center */}
       <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-6 text-[#1C1E53] text-2xl md:text-3xl">
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition-colors">
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gray-500 transition-colors"
+        >
           <FaGithub />
         </a>
-        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition-colors">
+        <a
+          href="https://linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gray-500 transition-colors"
+        >
           <FaLinkedin />
         </a>
-        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition-colors">
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gray-500 transition-colors"
+        >
           <FaTwitter />
         </a>
       </div>
