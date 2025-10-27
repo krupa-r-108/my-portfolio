@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
 return(
   <section
   id="tech"
-  className="relative min-h-[85vh] px-3 lg:min-h-screen flex items-center justify-center  overflow-hidden"
+  className="relative min-h-[75vh] px-3 lg:min-h-screen flex items-center justify-center  overflow-hidden "
 >
           <Hexagon
               size={120}

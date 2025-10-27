@@ -12,7 +12,7 @@ export default function AboutSection() {
       id="about"
       className={`relative flex flex-col md:flex-row items-center justify-between 
                  max-w-full mx-auto px-6 md:px-12 lg:px-20 py-1 
-                 min-h-[75vh] overflow-hidden lg:min-h-[78vh]
+                 min-h-[70vh] overflow-hidden lg:min-h-[78vh]
                  transition-all duration-1000 ease-out
                  ${
                    isVisible
@@ -64,7 +64,7 @@ export default function AboutSection() {
       </div>
 
       {/* Right: Text Section */}
-      <div className="md:w-1/2 w-full mt-12 md:mt-0 md:pl-12 lg:pl-24 group">
+      <div className="md:w-1/2 w-full mt-12 md:mt-0 md:pl-12 lg:pl-24 group pb-8">
         <h2 className="text-4xl font-bold text-gray-900 mb-6 relative inline-block">
           About Me
           <span className="block mt-2 w-20 h-1 bg-[#FDC435] rounded-full transition-all duration-500 md:group-hover:w-28"></span>

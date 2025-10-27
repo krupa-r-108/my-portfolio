@@ -29,7 +29,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="min-h-screen px-6 py-20 bg-[#F9FAFF] relative overflow-hidden"
+      className="min-h-screen px-6 py-10 bg-[#F9FAFF] relative overflow-hidden"
     >
       {/* Background Shapes */}
       <Pentagon

@@ -7,7 +7,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-[#F9FAFF] flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-20 gap-12 relative"
+      className="min-h-screen bg-[#F9FAFF] flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-15 gap-12 relative"
     >
       <CircleShape
         size={40}
@@ -65,7 +65,7 @@ export default function ContactSection() {
       />
 
       {/* SOCIALS - Bottom Center */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-6 text-[#1C1E53] text-2xl md:text-3xl">
+      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-6 text-[#1C1E53] text-2xl md:text-3xl">
         <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition-colors">
           <FaGithub />
         </a>
