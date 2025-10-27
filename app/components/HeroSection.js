@@ -17,12 +17,12 @@ export default function HeroSection() {
       <CircleShape
         size={60}
         color="#FFE15D"
-        className="absolute top-[70%] left-[73%] opacity-40 hidden md:block"
+        className="absolute top-[75%] left-[80%] opacity-40 hidden lg:block"
       />
       <CircleShape
         size={40}
         color="#FFE15D"
-        className="absolute top-[72%] left-[75%] opacity-40 hidden md:block"
+        className="absolute top-[75%] left-[78%] opacity-40 hidden lg:block"
       />
 
       <DotGroup
@@ -72,7 +72,7 @@ export default function HeroSection() {
         className="absolute top-0 left-0 object-cover w-[65%] h-full "
       />
 
-      <div className="text-center md:text-left max-w-xl z-50 ">
+      <div className="text-center md:text-left max-w-xl z-50 pl-6">
         <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-gray-900 animate-fadeIn">
           Hi, I’m <span className="text-[#FDC435]">Krupa</span>👋
         </h1>

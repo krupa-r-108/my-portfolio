@@ -13,7 +13,7 @@ export default function useInViewAnimation() {
           observer.unobserve(ref.current); 
         }
       },
-      { threshold: 0.3 }              
+      { threshold: 0.4 }              
     );
 
     if (ref.current) observer.observe(ref.current);

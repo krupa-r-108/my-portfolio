@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
 return(
   <section
   id="tech"
-  className="relative min-h-screen flex items-center justify-center  overflow-hidden"
+  className="relative min-h-[85vh] px-3 lg:min-h-screen flex items-center justify-center  overflow-hidden"
 >
           <Hexagon
               size={120}
@@ -55,7 +55,7 @@ return(
         count={6}
         color="#FDC435"
         direction="column"
-        className="absolute top-20 left-10 opacity-40"
+        className="absolute top-20 left-10 opacity-40 animate-bounce-slow"
       />
       <DotGroup
         count={6}
@@ -67,7 +67,7 @@ return(
         count={6}
         color="#FDC435"
         direction="column"
-        className="absolute top-20 left-18 opacity-40"
+        className="absolute top-20 left-18 opacity-40 animate-bounce-slow"
       />
       <DotGroup
         count={6}
@@ -79,7 +79,7 @@ return(
         count={6}
         color="#FDC435"
         direction="column"
-        className="absolute top-20 left-26 opacity-40"
+        className="absolute top-20 left-26 opacity-40 animate-bounce-slow"
       />
 
 

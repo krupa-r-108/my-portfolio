@@ -1,5 +1,7 @@
+
 import Image from "next/image";
 import CircleShape from "./shapes/CircleShape";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export default function ContactSection() {
   return (
@@ -7,11 +9,17 @@ export default function ContactSection() {
       id="contact"
       className="min-h-screen bg-[#F9FAFF] flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-20 gap-12 relative"
     >
-        <CircleShape
-        size={340}
-          color="#FFE15D"
-          className="absolute -top-3/12 left-[75%] opacity-40 hidden md:block"
-        />
+      <CircleShape
+        size={40}
+        color="#FFE15D"
+        className="absolute top-[10%] left-[75%] opacity-40 hidden md:block lg:block animate-float-slow"
+      />
+      <CircleShape
+        size={60}
+        color="#FFE15D"
+        className="absolute top-[5%] left-[85%] opacity-40 hidden md:block lg:block animate-float-slower"
+      />
+
       <div className="md:w-1/2 w-full text-center md:text-left">
         <h2 className="text-4xl md:text-5xl font-bold text-[#1C1E53] leading-snug mb-4">
           Let’s make something <br />
@@ -48,13 +56,26 @@ export default function ContactSection() {
           </button>
         </form>
       </div>
-      <Image 
+
+      <Image
         src={"footer-3.svg"}
         alt="footer image"
         fill
         className="absolute bottom-0 left-0 object-cover w-[65%] h-full"
       />
 
+      {/* SOCIALS - Bottom Center */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-6 text-[#1C1E53] text-2xl md:text-3xl">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition-colors">
+          <FaGithub />
+        </a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition-colors">
+          <FaLinkedin />
+        </a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 transition-colors">
+          <FaTwitter />
+        </a>
+      </div>
     </section>
   );
 }

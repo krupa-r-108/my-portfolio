@@ -18,7 +18,6 @@ export default function HomePage() {
         <div className="h-20 bg-gradient-to-b from-white  to-[#F9FAFF]"></div>
         <ProjectsSection />
             <div className="h-20 bg-gradient-to-b from-[#F9FAFF] to-white"></div>
-
         <TestimonialsSection />
          <div className="h-20 bg-gradient-to-b from-white  to-[#F9FAFF]"></div>
         <ContactSection />

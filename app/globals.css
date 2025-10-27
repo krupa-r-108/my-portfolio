@@ -12,14 +12,16 @@ html {
    overflow-x: hidden;
 } */
 
+/* hero section image bouncing  */
 @keyframes bounce-slow {
   0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-18px); }
 }
 .animate-bounce-slow {
   animation: bounce-slow 4s ease-in-out infinite;
 }
 
+/* hero section title */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -29,6 +31,7 @@ html {
   animation: fadeIn 2s ease forwards;
 }
 
+/* project section sliding  */
 @keyframes slideInLeft {
   from { opacity: 0; transform: translateX(-50px); }
   to { opacity: 1; transform: translateX(0); }
@@ -42,6 +45,49 @@ html {
 .animate-slide-left { animation: slideInLeft 1.5s ease forwards; }
 .animate-slide-right { animation: slideInRight 1.5s ease forwards; }
 
+/* circle rotate animation  */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-50px); }
+}
+@keyframes floatSlower {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(50px); }
+}
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+.animate-float-slower {
+  animation: floatSlower 8s ease-in-out infinite;
+}
+
+
+/*  Pentagon Rotation Animations  */
+@keyframes rotate-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-rotate-slow {
+  animation: rotate-slow 3s linear infinite;
+}
+
+.animate-rotate-reverse {
+  animation: rotate-reverse 25s linear infinite;
+}
 
 
 /* #bottom{
